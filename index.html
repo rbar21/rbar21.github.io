@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>My Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Минималистичная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f8f8f8;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 72px;
+            color: rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            user-select: none;
+            z-index: -1;
+        }
+
+        .background-text span {
+            white-space: nowrap;
+            transform: rotate(-45deg);
+            margin: 10px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .images img {
+            max-width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .poem {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is my GitHub Pages website!</h1>
+    <div class="background-text">
+        <span>Алға Қазақстан</span><span>Алға Қазақстан</span><span>Алға Қазақстан</span>
+        <span>Алға Қазақстан</span><span>Алға Қазақстан</span><span>Алға Қазақстан</span>
+        <span>Алға Қазақстан</span><span>Алға Қазақстан</span><span>Алға Қазақстан</span>
+        <span>Алға Қазақстан</span><span>Алға Қазақстан</span><span>Алға Қазақстан</span>
+        <span>Алға Қазақстан</span><span>Алға Қазақстан</span><span>Алға Қазақстан</span>
+        <span>Алға Қазақстан</span><span>Алға Қазақстан</span><span>Алға Қазақстан</span>
+    </div>
+    <div class="content">
+        <div class="images">
+            <img src="https://i.pinimg.com/564x/29/bf/ae/29bfaea9113593fad342a39bd3454019.jpg" alt="Image 1">
+            <img src="https://i.pinimg.com/736x/1e/ab/85/1eab856ce36ccb30d58a0da6ec5d8c0d.jpg" alt="Image 2">
+            <img src="https://i.pinimg.com/736x/59/20/0c/59200cdff44ff2835b5eab38e44fe930.jpg" alt="Image 3">
+        </div>
+        <div class="poem">
+            <p>Алина — удивительное имя,<br>
+            Таинственно-певучее оно.<br>
+            Как будто бы плетет узоры иней<br>
+            И вязью покрывает он окно.<br>
+            Как будто бы ночной ковыль взволнован,<br>
+            Монгольские звенят в нем стремена.<br>
+            И не могу я пожелать иного,<br>
+            Чем быть собой! Такая ты — одна!</p>
+        </div>
+    </div>
 </body>
 </html>
